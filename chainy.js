@@ -15,8 +15,9 @@
     };
 
     Chain.prototype.states = {
-        DONE: "done",
-        FAIL: "fail"
+        DONE:     "done",
+        FAIL:     "fail",
+        ALL_DONE: "allDone"
     };
 
     /**
@@ -90,7 +91,7 @@
         this._emitter.emit(state, data);
 
         if (this._parent._completedCount === this._parent._size) {
-            this._parent._emitter.emit("allDone");
+            this._parent._emitter.emit(Chain.prototype.states.ALL_DONE);
         }
 
         return this;
@@ -130,7 +131,7 @@
         result = this.call(function () {
             var self = this;
 
-            chainBlock.done()._emitter.on("allDone", function () {
+            chainBlock.done()._emitter.on(Chain.prototype.states.ALL_DONE, function () {
                 self.done();
             });
         });
