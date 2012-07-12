@@ -79,7 +79,7 @@
     Chain.prototype.when = function (state, callback, args) {
         var subChain;
 
-        if (arguments.length === 3) {
+        if (arguments.length >= 2) {
             // single call
             return this.position.call(callback, args, state).end();
         } else {
