@@ -48,14 +48,15 @@
      * Adds a function or a new subchain to be 
      * executed after the previous call will be done.
      *
+     * @param {string}   state
      * @param {function} callback  callback function
      * @param {Array}    args      arguments array
      *
      * @example
-     *   .whenDone(foo, argsArray)
+     *   .when("done", foo, argsArray)
      *
      * @example
-     *   .whenDone()
+     *   .when("done")
      *     .call(foo, argsArray)
      *     .call(foo, argsArray)
      *   .end 
