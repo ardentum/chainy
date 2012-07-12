@@ -17,6 +17,6 @@ Simple as potato:
             .call(foo42)
             .call(foo43)
         .end()
-            .when("done", foo400);          // call foo400 when all the functions in the group will be done
+            .when("done", foo400);          // call foo400 when all functions in the group will be done
 
 Call this.done (), to indicate that an asynchronous function completed successfully.

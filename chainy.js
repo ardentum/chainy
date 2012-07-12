@@ -1,4 +1,17 @@
-(function (exports) {
+(function () {
+    var exports,
+        EventEmitter;
+
+    if (window) {
+        //for browser
+        exports = window;
+        EventEmitter = window.EventEmitter;
+    } else {
+        //for node.js
+        exports = module.exports;
+        EventEmitter = require("events").EventEmitter;
+    }
+
     var Chain = function (parent) {
         var chain = this;
 
@@ -145,4 +158,4 @@
     exports.chainy = function () {
         return new Chain().done();
     };
-}(typeof module === "object" ? module.exports : window));
+}());
