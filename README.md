@@ -1,4 +1,4 @@
-# Chainy. Fun way to write asynchronous JS.
+# Chainy. Funny way to write asynchronous JS.
 
 Simple as potato:
 
