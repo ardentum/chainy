@@ -2,7 +2,7 @@
     var exports,
         EventEmitter;
 
-    if (window) {
+    if (typeof window !== "undefined") {
         //for browser
         exports = window;
         EventEmitter = window.EventEmitter;
