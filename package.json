@@ -1,0 +1,31 @@
+{
+  "name": "chainy",
+  "description": "Funny way to write asynchronous JS",
+  "version": "0.6",
+  "author": {
+    "name": "Ivanov Pavel",
+    "email": "ardentum@gmail.com"
+  },
+  "keywords": [
+    "deferred",
+    "chains",
+    "asynchronous"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ardentum/chainy.git"
+  },
+  "main": "chainy",
+  "_id": "chainy@0.6",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "_engineSupported": true,
+  "_npmVersion": "1.1.24",
+  "_nodeVersion": "v0.6.19",
+  "_defaultsLoaded": true,
+  "_from": "chainy"
+}
