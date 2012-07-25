@@ -1,5 +1,3 @@
-# Chainy. Funny way to write asynchronous JS.
-
 Simple as potato:
 
     chainy()                                // create chain
